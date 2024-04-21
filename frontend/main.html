@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script> -->
+
+</head>
+
+<body>
+    
+    <div class="add-event-container">
+        <form action="eventform.html">
+            <input type="submit" id="add-event" value="Add event"></button>
+        </form>
+    </div>
+
+    <div id ="add-event-form"></div>
+
+    <div class="button-container">
+        <button id="prev-week-btn">Prev Week</button>
+        <button id="next-week-btn">Next Week</button>
+    </div>
+
+    <div id="tabel-container">
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th></th> <!-- Empty cell for spacing -->
+                    <!-- Generate days of the week starting from current date -->
+                    <!-- <script src="schedule.js" defer></script> -->
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="db.js" /> -->
+</body>
+
+</html>
